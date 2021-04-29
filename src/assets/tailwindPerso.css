@@ -1,0 +1,25 @@
+.bottomGradient {
+    background: linear-gradient(179.94deg, rgba(196, 196, 196, 0) 70.79%, #373D20 99.95%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619712241/lynx-boreal/lynx-boreal-1_bmqntn.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bottomTopGradient {
+    background: linear-gradient(180deg, #373D20 0%, rgba(55, 61, 32, 0) 9.43%, rgba(55, 61, 32, 0) 87.14%, #373D20 100%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619716651/lynx-boreal/baby-lynx_nplvhg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.topGradient {
+    background: linear-gradient(180deg, rgba(55, 61, 32, 0.31) 0%, rgba(55, 61, 32, 0) 12.66%, rgba(55, 61, 32, 0) 83.28%, rgba(55, 61, 32, 0.27) 100%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619717737/lynx-boreal/piste-lynx_pf4epo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blur {
+    backdrop-filter: blur(20px);
+    box-shadow: inset -3px -3px 24px -2px rgba(0, 0, 0, 0.25);
+}
