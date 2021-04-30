@@ -1,5 +1,5 @@
 .bottomGradient {
-    background: linear-gradient(179.94deg, rgba(196, 196, 196, 0) 70.79%, #373D20 99.95%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619712241/lynx-boreal/lynx-boreal-1_bmqntn.jpg);
+    background: linear-gradient(179.94deg, rgba(196, 196, 196, 0) 70.79%, #373D20 99.95%), url(https://res.cloudinary.com/corentin7301/image/upload/f_auto/q_auto/c_scale/fl_lossy/v1619712241/lynx-boreal/lynx-boreal-1_bmqntn);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 @media screen and (min-width: 768px) {
 
     .bottomGradient {
-        background: linear-gradient(179.94deg, rgba(196, 196, 196, 0) 70.79%, #373D20 99.95%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619787514/lynx-boreal/lynx-boreal-2_ad6sxu.jpg);
+        background: linear-gradient(179.94deg, rgba(196, 196, 196, 0) 70.79%, #373D20 99.95%), url(https://res.cloudinary.com/corentin7301/image/upload/f_auto/q_auto/c_scale/fl_lossy/v1619787514/lynx-boreal/lynx-boreal-2_ad6sxu);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,14 +16,14 @@
 }
 
 .bottomTopGradient {
-    background: linear-gradient(180deg, #373D20 0%, rgba(55, 61, 32, 0) 9.43%, rgba(55, 61, 32, 0) 87.14%, #373D20 100%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619716651/lynx-boreal/baby-lynx_nplvhg.jpg);
+    background: linear-gradient(180deg, #373D20 0%, rgba(55, 61, 32, 0) 9.43%, rgba(55, 61, 32, 0) 87.14%, #373D20 100%), url(https://res.cloudinary.com/corentin7301/image/upload/f_auto/q_auto/c_scale/fl_lossy/v1619716651/lynx-boreal/baby-lynx_nplvhg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .topGradient {
-    background: linear-gradient(180deg, rgba(55, 61, 32, 0.31) 0%, rgba(55, 61, 32, 0) 12.66%, rgba(55, 61, 32, 0) 83.28%, rgba(55, 61, 32, 0.27) 100%), url(https://res.cloudinary.com/corentin7301/image/upload/v1619717737/lynx-boreal/piste-lynx_pf4epo.jpg);
+    background: linear-gradient(180deg, rgba(55, 61, 32, 0.31) 0%, rgba(55, 61, 32, 0) 12.66%, rgba(55, 61, 32, 0) 83.28%, rgba(55, 61, 32, 0.27) 100%), url(https://res.cloudinary.com/corentin7301/image/upload/f_auto/q_auto/c_scale/fl_lossy/v1619717737/lynx-boreal/piste-lynx_pf4epo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
