@@ -16,5 +16,8 @@
     "postcss": "^8.2.13",
     "tailwindcss": "^2.1.2",
     "vite": "^2.2.3"
+  },
+  "dependencies": {
+    "gsap": "^3.6.1"
   }
 }

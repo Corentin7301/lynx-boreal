@@ -32,7 +32,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/js/main.js"></script>
 </head>
 
 <body>
@@ -40,8 +40,8 @@
   <div class=" w-screen h-screen bg-darkGreen text-eggWhite font-montserrat" x-data="speciesDatas()">
 
     <!-- 1 -->
-    <div class=" relative w-screen h-screen bottomGradient bg-lynxBoreal flex justify-center">
-      <h1 class=" absolute top-20 right-5 font-medium text-4xl uppercase" x-text="name"></h1>
+    <div class=" frame relative w-screen h-screen bottomGradient bg-lynxBoreal flex justify-center">
+      <h1 class=" speciesName absolute top-20 right-5 font-medium text-4xl uppercase" x-text="name"></h1>
       <svg class="w-10 h-10 absolute bottom-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
@@ -49,8 +49,8 @@
     </div>
 
     <!-- 2 -->
-    <div class=" bg-darkGreen w-screen h-screen pt-14">
-      <h2 class=" uppercase text-center font-medium text-4xl" x-text="scientificName"></h2>
+    <div class=" frame bg-darkGreen w-screen h-screen pt-14">
+      <h2 class=" scientificName uppercase text-center font-medium text-4xl" x-text="scientificName"></h2>
       <h3 class=" uppercase text-center mt-14">repartition</h3>
       <img :src="mapLink"
         alt="carte de répartition du lynx boréal" class=" mt-4">
@@ -88,16 +88,16 @@
         <!-- paw -->
         <div class=" flex text-xl space-x-5">
           <i class="fas fa-paw"></i>
-          <p class=" text-sm font-normal" x-text="statusOfProtection"></p>
+          <p class=" text-sm font-normal">Status : <span  x-text="statusOfProtection"></span></p>
         </div>
 
       </div>
     </div>
 
     <!-- 3 -->
-    <div class=" relative bottomTopGradient w-screen h-screen">
-      <div class=" absolute left-8 bottom-24 bg-whiteTransparent rounded-xl blur shadow-xl space-y-3 px-5 py-4">
-        <p class=" font-normal">Période de rut : <span x-text="rutPeriod"></span></p>
+    <div class=" frame relative bottomTopGradient w-screen h-screen">
+      <div class=" animatedSquare1 absolute left-8 bottom-24 bg-whiteTransparent rounded-xl blur shadow-xl space-y-3 px-5 py-4">
+        <p class="font-normal">Période de rut : <span x-text="rutPeriod"></span></p>
         <p class="font-normal">Gestation : <span x-text="pregnancy"></span></p>
         <p class="font-normal">Portée : <span x-text="litter"></span></p>
         <p class="font-normal">Sevrage : <span x-text="weaning"></span></p>
@@ -105,10 +105,10 @@
     </div>
 
     <!-- 4 -->
-    <div class=" relative w-screen h-screen topGradient">
+    <div class=" frame relative w-screen h-screen topGradient">
       <div
-        class=" absolute top-16 right-5 bg-whiteTransparent text-darkGreen rounded-xl blur shadow-xl space-y-3 px-5 py-4">
-        <p class=" font-normal">Traces : <span x-text="paws"></span></p>
+        class=" animatedSquare2 absolute top-16 right-5 bg-whiteTransparent text-darkGreen rounded-xl blur shadow-xl space-y-3 px-5 py-4">
+        <p class="font-normal">Traces : <span x-text="paws"></span></p>
         <p class="font-normal w-60">Proies : <span x-text="preys"></span></p>
         <p class="font-normal">Prédateurs : <span x-text="predators"></span></p>
       </div>
