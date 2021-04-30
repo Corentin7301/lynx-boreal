@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './*.html',
+    './src/assets/tailwindPerso.css',
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
