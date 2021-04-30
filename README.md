@@ -2,7 +2,7 @@
 
 ## Made by [Corentin PERROUX]([CorentinPERROUX](https://portfolio.corentinperroux.fr))
 
-## URL : [https://buggati-cars.netlify.app/](https://buggati-cars.netlify.app/)
+## URL : [https://lynx-boreal.netlify.app/](https://lynx-boreal.netlify.app/)
 
 ## Installation des dépendances :
 
@@ -73,3 +73,14 @@ npm run build
 
 * dev : "vite"
 * build: "vite build"
+
+
+
+todo: 
+
+* meta X
+* readme
+* responsive
+* gsap
+* datas X
+* favicon X
