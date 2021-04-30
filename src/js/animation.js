@@ -40,13 +40,13 @@ speciesNameAnimation
                 stagger: 0.6
             }, 0)
             .from(animatedSquare1, {
-                x: -350,
+                x: -550,
                 duration: 2,
                 ease: 'power2.out',
                 stagger: 0.6
             }, 0)
             .from(animatedSquare2, {
-                x: 350,
+                x: 550,
                 duration: 2,
                 ease: 'power2.out',
                 stagger: 0.6

@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         'montserrat': ['montserrat']
       },
+      screens:{
+        'map': '476px'
+      }
     },
   },
   variants: {

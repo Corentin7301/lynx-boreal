@@ -79,8 +79,8 @@ npm run build
 todo: 
 
 * meta X
-* readme
-* responsive
-* gsap
+* readme X
+* responsive X
+* gsap X
 * datas X
 * favicon X
