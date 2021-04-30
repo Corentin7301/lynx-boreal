@@ -37,11 +37,11 @@
 
 <body>
 
-  <div class=" w-screen h-screen bg-darkGreen text-eggWhite font-montserrat" x-data="">
+  <div class=" w-screen h-screen bg-darkGreen text-eggWhite font-montserrat" x-data="speciesDatas()">
 
     <!-- 1 -->
     <div class=" relative w-screen h-screen bottomGradient bg-lynxBoreal flex justify-center">
-      <h1 class=" absolute top-20 right-5 font-medium text-4xl uppercase">LYNX BOREAL</h1>
+      <h1 class=" absolute top-20 right-5 font-medium text-4xl uppercase" x-text="name"></h1>
       <svg class="w-10 h-10 absolute bottom-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path>
@@ -50,9 +50,9 @@
 
     <!-- 2 -->
     <div class=" bg-darkGreen w-screen h-screen pt-14">
-      <h2 class=" uppercase text-center font-medium text-4xl">LYNX LYNX</h2>
+      <h2 class=" uppercase text-center font-medium text-4xl" x-text="scientificName"></h2>
       <h3 class=" uppercase text-center mt-14">repartition</h3>
-      <img src="https://res.cloudinary.com/corentin7301/image/upload/v1619709897/lynx-boreal/map_t839kr.png"
+      <img :src="mapLink"
         alt="carte de répartition du lynx boréal" class=" mt-4">
       <div class=" px-12 space-y-10">
         <h3 class=" uppercase mt-12 text-center">caractéristiques</h3>
@@ -60,35 +60,35 @@
         <!-- weight -->
         <div class=" flex text-xl space-x-5">
           <i class="fas fa-weight"></i>
-          <p class=" text-sm font-normal">Mâle : 20 kg</p>
-          <p class=" text-sm font-normal">Femelle : 17 kg</p>
+          <p class=" text-sm font-normal">Mâle : <span x-text="maleWeight"></span></p>
+          <p class=" text-sm font-normal">Femelle : <span x-text="femaleWeight"></span></p>
         </div>
 
         <!-- width -->
         <div class=" flex text-xl items-center space-x-5">
           <i class="fas fa-ruler-combined"></i>
           <div class=" space-y-2">
-            <p class=" text-sm font-normal">Longueur : 80-130 cm</p>
-            <p class=" text-sm font-normal">Hauteur : 60-70 cm</p>
+            <p class=" text-sm font-normal">Longueur : <span x-text="width"></span></p>
+            <p class=" text-sm font-normal">Hauteur : <span x-text="height"></span></p>
           </div>
         </div>
 
         <!-- age -->
         <div class=" flex text-xl space-x-5">
           <i class="fas fa-hourglass-half"></i>
-          <p class=" text-sm font-normal">15 ans</p>
+          <p class=" text-sm font-normal" x-text="age"></p>
         </div>
 
         <!-- territory -->
         <div class=" flex text-xl space-x-5">
           <i class="fas fa-map-marked-alt"></i>
-          <p class=" text-sm font-normal">100-800 km²</p>
+          <p class=" text-sm font-normal" x-text="territory"></p>
         </div>
 
         <!-- paw -->
         <div class=" flex text-xl space-x-5">
           <i class="fas fa-paw"></i>
-          <p class=" text-sm font-normal">Protégé</p>
+          <p class=" text-sm font-normal" x-text="statusOfProtection"></p>
         </div>
 
       </div>
@@ -97,10 +97,10 @@
     <!-- 3 -->
     <div class=" relative bottomTopGradient w-screen h-screen">
       <div class=" absolute left-8 bottom-24 bg-whiteTransparent rounded-xl blur shadow-xl space-y-3 px-5 py-4">
-        <p class=" font-normal">Période de rut : Février-avril</p>
-        <p class="font-normal">Gestation : 70 jours</p>
-        <p class="font-normal">Portée : 1-3 petits</p>
-        <p class="font-normal">Sevrage : 1 an</p>
+        <p class=" font-normal">Période de rut : <span x-text="rutPeriod"></span></p>
+        <p class="font-normal">Gestation : <span x-text="pregnancy"></span></p>
+        <p class="font-normal">Portée : <span x-text="litter"></span></p>
+        <p class="font-normal">Sevrage : <span x-text="weaning"></span></p>
       </div>
     </div>
 
@@ -108,10 +108,9 @@
     <div class=" relative w-screen h-screen topGradient">
       <div
         class=" absolute top-16 right-5 bg-whiteTransparent text-darkGreen rounded-xl blur shadow-xl space-y-3 px-5 py-4">
-        <p class=" font-normal">Traces : 4-8 cm, alignées</p>
-        <p class="font-normal w-60">Proies : Petits ongulés (chevreuils, chamois, ...), renards roux, lièvre...</p>
-        <p class="font-normal">Prédateurs : Homme, loup, Ours</p>
-        <p class="font-normal">Sevrage : 1 an</p>
+        <p class=" font-normal">Traces : <span x-text="paws"></span></p>
+        <p class="font-normal w-60">Proies : <span x-text="preys"></span></p>
+        <p class="font-normal">Prédateurs : <span x-text="predators"></span></p>
       </div>
       <p class=" absolute left-5 bottom-5 text-sm font-semibold">© Copyright <a
           href="https://portfolio.corentinperroux.fr" target="_blank"
@@ -125,6 +124,30 @@
 
 
   <script>
+
+    function speciesDatas() {
+      return {
+        name: "lynx boréal",
+        scientificName: "lynx lynx",
+        mapLink: "https://res.cloudinary.com/corentin7301/image/upload/v1619709897/lynx-boreal/map_t839kr.png",
+        maleWeight: "20 kg",
+        femaleWeight: "17 kg",
+        width: "80-130 cm",
+        height: "60-70 cm",
+        age: "15 ans",
+        territory: "100-800 km²",
+        statusOfProtection: "Protégé",
+        rutPeriod: "Février-avril",
+        pregnancy: "70 jours",
+        litter: "1-3 petits",
+        weaning: "1 an",
+        paws: "3-8 cm, alignées",
+        preys: "Petits ongulés (chevreuils, chamois, ...), renards roux, lièvre...",
+        predators: "Homme, loup, Ours",
+      }
+    }
+
+
     function copyrightDate() {
       const copyrightDateParsed = new Date().getFullYear()
       return copyrightDateParsed
